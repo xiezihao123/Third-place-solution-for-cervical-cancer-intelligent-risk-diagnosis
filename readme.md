@@ -1,5 +1,5 @@
 # 环境配置
-mmdetection 1.0    pytorch 1.1  python 3.7  相关安装步骤见https://github.com/open-mmlab/mmdetection/blob/master/docs/install.md
+mmdetection 1.0    pytorch 1.1  python 3.7  相关安装步骤见 https://github.com/open-mmlab/mmdetection/blob/master/docs/install.md
 
 
 # 说明文档
@@ -25,6 +25,8 @@ bash test.sh
 
 ### 3. 算法创新
 首先我们模型采用的backbone是对小目标友好的HRNet网络，然后为了更好的对框进行分类和回归，我们采用级联的方式进行回归。在损失函数方面，我们采用了更能反应框与ground truth的位置关系的iou_loss。在采样方面，我们提出了一种混合采样的方式，在级联的三个阶段，第一个阶段采用难样本挖掘，第二个第三个采用随机采用。在数据处理方面，我们提出在已有类别基础上增加一类正常细胞的类别，以此来利用阴性图片以及减少误检。另外由于倒数第二类目标存在极大尺寸的情况，我们提出直接用roi当训练样本，与切割图片的检测结果进行结合，以缓和目标被切碎的问题。
+
+## 具体创新讲述以及PPT见 https://tianchi.aliyun.com/notebook-ai/detail?spm=5176.12586969.1002.15.76de2a3c2OpAcS&postId=113802
 
 ### 4.  其他注意事项。
 
