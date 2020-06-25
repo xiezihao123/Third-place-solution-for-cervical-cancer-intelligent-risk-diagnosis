@@ -1,4 +1,4 @@
-# 说明文档
+# 环境配置
 mmdetection 1.0    pytorch 1.1  python 3.7  相关安装步骤见https://github.com/open-mmlab/mmdetection/blob/master/docs/install.md
 
 
@@ -13,13 +13,13 @@ mmdetection 1.0    pytorch 1.1  python 3.7  相关安装步骤见https://github.
 
 #### 训练脚本
 
-cd /home/admin/jupyter/mmdetection-master
+cd $mmdetection-master
 
 bash train.sh
 
 #### 推理脚本
 
-cd /home/admin/jupyter/mmdetection-master
+cd $mmdetection-master
 
 bash test.sh
 
