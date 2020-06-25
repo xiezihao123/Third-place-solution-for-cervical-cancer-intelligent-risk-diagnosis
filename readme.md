@@ -1,4 +1,8 @@
 # 说明文档
+mmdetection 1.0    pytorch 1.1  python 3.7  相关安装步骤见https://github.com/open-mmlab/mmdetection/blob/master/docs/install.md
+
+
+# 说明文档
 
 
 ### 1.代码文件结构
